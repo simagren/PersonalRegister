@@ -15,6 +15,7 @@ namespace PersonalRegister
 
         public Employee(int id, string firstName, string lastName, float salary) 
         { 
+            this.id = id;
             this.firstName = firstName;
             this.lastName = lastName;
             this.salary = salary;

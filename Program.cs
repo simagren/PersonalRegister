@@ -42,12 +42,17 @@ while (menuChoice != MenuChoices.Exit)
                 menuChoice = MenuChoices.Exit;
                 break;
             default:
+                Console.Clear();
+                MenuMessage();
+                Console.WriteLine("Invalid input");
                 break;
         }
     }
     else
     {
-        Console.WriteLine("error");
+        Console.Clear();
+        MenuMessage();
+        Console.WriteLine("Invalid input");
     }    
 }
 
@@ -157,4 +162,4 @@ void MenuMessage()
     Console.WriteLine("[9] - Exit\n");
 }
 
-enum MenuChoices { View, Add, Edit, Remove, Exit };
+enum MenuChoices { View, Add, Edit, Remove, Exit = 9 };
